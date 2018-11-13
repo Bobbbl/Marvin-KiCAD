@@ -125,60 +125,27 @@ F 3 "" H 2650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Module:Arduino_UNO_R3 A1
-U 1 1 5BE05B95
-P 4800 3000
-F 0 "A1" H 4600 4050 50  0000 R CNN
-F 1 "Arduino_UNO_R3" H 4600 3950 50  0000 R CNN
-F 2 "Modules:Arduino_UNO_R3_WithMountingHoles" H 4950 1950 50  0001 L CNN
-F 3 "" H 4600 4050 50  0001 C CNN
-	1    4800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5VD #PWR010
-U 1 1 5BE05C08
-P 4700 1900
-F 0 "#PWR010" H 4700 1750 50  0001 C CNN
-F 1 "+5VD" H 4700 2040 50  0000 C CNN
-F 2 "" H 4700 1900 50  0001 C CNN
-F 3 "" H 4700 1900 50  0001 C CNN
-	1    4700 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5VD #PWR012
 U 1 1 5BE0694E
-P 5450 2350
-F 0 "#PWR012" H 5450 2200 50  0001 C CNN
-F 1 "+5VD" H 5450 2490 50  0000 C CNN
-F 2 "" H 5450 2350 50  0001 C CNN
-F 3 "" H 5450 2350 50  0001 C CNN
-	1    5450 2350
+P 5400 2250
+F 0 "#PWR012" H 5400 2100 50  0001 C CNN
+F 1 "+5VD" H 5400 2390 50  0000 C CNN
+F 2 "" H 5400 2250 50  0001 C CNN
+F 3 "" H 5400 2250 50  0001 C CNN
+	1    5400 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GNDD #PWR011
-U 1 1 5BE069CF
-P 4800 4250
-F 0 "#PWR011" H 4800 4000 50  0001 C CNN
-F 1 "GNDD" H 4800 4125 50  0000 C CNN
-F 2 "" H 4800 4250 50  0001 C CNN
-F 3 "" H 4800 4250 50  0001 C CNN
-	1    4800 4250
-	1    0    0    -1  
-$EndComp
-Text GLabel 4050 2900 0    60   Input ~ 0
+Text GLabel 6800 2550 2    60   Input ~ 0
 PWM1
-Text GLabel 4050 3000 0    60   Input ~ 0
+Text GLabel 6800 2450 2    60   Input ~ 0
 PWM2
 Text GLabel 8700 1100 0    60   Input ~ 0
 PWM1
 Text GLabel 8700 2600 0    60   Input ~ 0
 PWM2
-Text GLabel 4050 3700 0    60   Input ~ 0
+Text GLabel 5500 3450 0    60   Input ~ 0
 DIR1
-Text GLabel 4050 3600 0    60   Input ~ 0
+Text GLabel 5500 3350 0    60   Input ~ 0
 DIR2
 Text GLabel 8700 1200 0    60   Input ~ 0
 DIR1
@@ -294,68 +261,6 @@ F 3 "" H 1450 6160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Driver_Motor:L298HN U2
-U 1 1 5BE08188
-P 1700 4350
-F 0 "U2" H 1300 5000 50  0000 R CNN
-F 1 "L298HN" H 2200 5000 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 1750 3700 50  0001 L CNN
-F 3 "" H 1850 4600 50  0001 C CNN
-	1    1700 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR06
-U 1 1 5BE083A3
-P 1700 5150
-F 0 "#PWR06" H 1700 4900 50  0001 C CNN
-F 1 "GNDD" H 1700 5025 50  0000 C CNN
-F 2 "" H 1700 5150 50  0001 C CNN
-F 3 "" H 1700 5150 50  0001 C CNN
-	1    1700 5150
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1400 5050
-NoConn ~ 1500 5050
-$Comp
-L power:GNDD #PWR04
-U 1 1 5BE08A46
-P 1550 3400
-F 0 "#PWR04" H 1550 3150 50  0001 C CNN
-F 1 "GNDD" H 1550 3275 50  0000 C CNN
-F 2 "" H 1550 3400 50  0001 C CNN
-F 3 "" H 1550 3400 50  0001 C CNN
-	1    1550 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR07
-U 1 1 5BE08B85
-P 1800 3400
-F 0 "#PWR07" H 1800 3250 50  0001 C CNN
-F 1 "+24V" H 1800 3540 50  0000 C CNN
-F 2 "" H 1800 3400 50  0001 C CNN
-F 3 "" H 1800 3400 50  0001 C CNN
-	1    1800 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5VD #PWR02
-U 1 1 5BE08EE5
-P 700 4000
-F 0 "#PWR02" H 700 3850 50  0001 C CNN
-F 1 "+5VD" H 700 4140 50  0000 C CNN
-F 2 "" H 700 4000 50  0001 C CNN
-F 3 "" H 700 4000 50  0001 C CNN
-	1    700  4000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2300 4550
-NoConn ~ 2300 4450
-NoConn ~ 1100 4250
-NoConn ~ 1100 4350
-NoConn ~ 1100 4450
-$Comp
 L Diode:1N4001 D1
 U 1 1 5BE093C6
 P 2200 6250
@@ -369,10 +274,6 @@ $EndComp
 Text GLabel 1450 5900 1    60   Input ~ 0
 OUT1
 Text GLabel 1450 6750 3    60   Input ~ 0
-OUT2
-Text GLabel 2450 4150 2    60   Input ~ 0
-OUT1
-Text GLabel 2450 4250 2    60   Input ~ 0
 OUT2
 Text Notes 1650 5700 0    79   ~ 16
 Polierspindel\n
@@ -397,30 +298,11 @@ Wire Wire Line
 	2650 1100 2650 1000
 Connection ~ 2350 1100
 Wire Wire Line
-	4700 2000 4700 1900
-Wire Wire Line
-	5300 2400 5450 2400
-Wire Wire Line
-	5450 2400 5450 2350
-Wire Wire Line
-	4800 4100 4800 4200
-Wire Wire Line
-	4700 4100 4700 4200
-Wire Wire Line
-	4700 4200 4800 4200
-Connection ~ 4800 4200
-Wire Wire Line
-	4900 4200 4900 4100
-Wire Wire Line
 	8800 2600 8700 2600
 Wire Wire Line
 	8800 1100 8700 1100
 Wire Wire Line
 	8800 2700 8700 2700
-Wire Wire Line
-	5000 1300 8000 1300
-Wire Wire Line
-	5000 1300 5000 2000
 Wire Wire Line
 	8000 1300 8000 2800
 Wire Wire Line
@@ -477,32 +359,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 3650 8600 3650
 Wire Wire Line
-	1700 5050 1700 5150
-Wire Wire Line
-	1100 3850 1000 3850
-Wire Wire Line
-	1000 3850 1000 3200
-Wire Wire Line
-	1000 3200 4300 3200
-Wire Wire Line
-	4300 3100 850  3100
-Wire Wire Line
-	850  3100 850  3950
-Wire Wire Line
-	850  3950 1100 3950
-Wire Wire Line
-	1700 3650 1700 3300
-Wire Wire Line
-	1700 3300 1550 3300
-Wire Wire Line
-	1550 3300 1550 3400
-Wire Wire Line
-	1800 3650 1800 3400
-Wire Wire Line
-	700  4000 700  4050
-Wire Wire Line
-	700  4050 1100 4050
-Wire Wire Line
 	1450 6550 1450 6600
 Wire Wire Line
 	1450 5900 1450 6000
@@ -516,14 +372,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 6600 2200 6400
 Connection ~ 1450 6600
-Wire Wire Line
-	2450 4150 2300 4150
-Wire Wire Line
-	2450 4250 2300 4250
-Text Notes 2000 3350 0    79   ~ 16
-DC Motordriver Shield
-Text Notes 2000 3550 0    60   ~ 0
-L298 Motorr Driver Shield\n1A - 36 V max.\n
 Text Notes 2950 700  0    79   ~ 16
 5V Stromversorgung
 Text Notes 2950 1200 0    59   ~ 0
@@ -533,21 +381,9 @@ Treiberstufe Schrittmotoren
 Text Notes 9600 1150 0    59   ~ 0
 Treiberstufe DM420\nmit Mikroschrittfähigkeit\n\nDC Input max 36V
 Wire Wire Line
-	4050 2900 4300 2900
-Wire Wire Line
-	4050 3000 4300 3000
-Wire Wire Line
-	4300 3700 4050 3700
-Wire Wire Line
-	4050 3600 4300 3600
-Wire Wire Line
 	1000 1100 1400 1100
 Wire Wire Line
 	2350 1100 2650 1100
-Wire Wire Line
-	4800 4200 4800 4250
-Wire Wire Line
-	4800 4200 4900 4200
 Wire Wire Line
 	8000 1300 8700 1300
 Wire Wire Line
@@ -558,24 +394,6 @@ Wire Wire Line
 	1450 6000 1450 6050
 Wire Wire Line
 	1450 6600 1450 6750
-NoConn ~ 5300 2600
-NoConn ~ 5300 2800
-NoConn ~ 5300 3000
-NoConn ~ 5300 3100
-NoConn ~ 5300 3200
-NoConn ~ 5300 3300
-NoConn ~ 5300 3400
-NoConn ~ 5300 3500
-NoConn ~ 5300 3700
-NoConn ~ 5300 3800
-NoConn ~ 4300 3500
-NoConn ~ 4300 3400
-NoConn ~ 4300 3300
-NoConn ~ 4300 2800
-NoConn ~ 4300 2700
-NoConn ~ 4300 2600
-NoConn ~ 4300 2500
-NoConn ~ 4300 2400
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5BE3EC9B
@@ -606,5 +424,133 @@ $EndComp
 Connection ~ 1700 1450
 Wire Wire Line
 	1700 1450 1700 1600
-NoConn ~ 4900 2000
+NoConn ~ 5650 1950
+NoConn ~ 5600 2000
+NoConn ~ 5650 2050
+Wire Wire Line
+	5400 2250 5650 2250
+$Comp
+L power:GNDD #PWR?
+U 1 1 5BEE61DB
+P 6850 2150
+F 0 "#PWR?" H 6850 1900 50  0001 C CNN
+F 1 "GNDD" H 6854 1995 50  0000 C CNN
+F 2 "" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2150 6850 2100
+Wire Wire Line
+	6850 2100 6650 2100
+Wire Wire Line
+	5600 2100 5550 2100
+Wire Wire Line
+	5550 2100 5550 1300
+Wire Wire Line
+	5550 1300 8000 1300
+Wire Wire Line
+	6800 2450 6750 2450
+Wire Wire Line
+	6750 2450 6750 2500
+Wire Wire Line
+	6750 2500 6700 2500
+Wire Wire Line
+	6800 2550 6650 2550
+Wire Wire Line
+	5500 3350 5550 3350
+Wire Wire Line
+	5550 3350 5550 3400
+Wire Wire Line
+	5550 3400 5600 3400
+Wire Wire Line
+	5500 3450 5650 3450
+$Comp
+L w_connectors:Arduino_Mega_Header J?
+U 1 1 5BEAF46F
+P 6150 3100
+F 0 "J?" H 6150 4487 60  0000 C CNN
+F 1 "Arduino_Mega_Header" H 6150 4381 60  0000 C CNN
+F 2 "" H 6150 3100 60  0000 C CNN
+F 3 "" H 6150 3100 60  0000 C CNN
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Marvin:ADAFRUIT254 U?
+U 1 1 5BEB5882
+P 3350 2700
+F 0 "U?" H 3531 3325 50  0000 C CNN
+F 1 "ADAFRUIT254" H 3531 3234 50  0000 C CNN
+F 2 "" H 2600 2450 50  0001 C CNN
+F 3 "" H 2600 2450 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR?
+U 1 1 5BEB5AC6
+P 4250 3000
+F 0 "#PWR?" H 4250 2850 50  0001 C CNN
+F 1 "+5VD" H 4250 3140 50  0000 C CNN
+F 2 "" H 4250 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 4250 3000
+NoConn ~ 3900 2900
+$Comp
+L power:GNDD #PWR?
+U 1 1 5BEB895F
+P 4050 3100
+F 0 "#PWR?" H 4050 2850 50  0001 C CNN
+F 1 "GNDD" H 4054 2945 50  0000 C CNN
+F 2 "" H 4050 3100 50  0001 C CNN
+F 3 "" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2800 4050 2800
+Wire Wire Line
+	4050 2800 4050 3100
+Text GLabel 4050 2500 2    50   Input ~ 0
+MOSI
+Text GLabel 4050 2600 2    50   Input ~ 0
+MISO
+Text GLabel 4050 2700 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	4050 2700 3900 2700
+Wire Wire Line
+	4050 2600 3900 2600
+Wire Wire Line
+	4050 2500 3900 2500
+Wire Wire Line
+	3900 2300 4050 2300
+Wire Wire Line
+	4050 2300 4050 2350
+Wire Wire Line
+	4050 2350 5600 2350
+Wire Wire Line
+	3900 2400 5650 2400
+Text GLabel 5500 4150 0    50   Input ~ 0
+CLK
+Text GLabel 5500 4050 0    50   Input ~ 0
+MISO
+Wire Wire Line
+	5600 4100 5550 4100
+Wire Wire Line
+	5550 4100 5550 4050
+Wire Wire Line
+	5550 4050 5500 4050
+Wire Wire Line
+	5500 4150 5650 4150
+Text GLabel 6800 4150 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	6800 4150 6650 4150
 $EndSCHEMATC

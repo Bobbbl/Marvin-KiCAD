@@ -27,4 +27,7 @@
   (lib (name contrib)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/contrib.lib)(options "")(descr ""))
   (lib (name valves)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/valves.lib)(options "")(descr ""))
   (lib (name Marvin)(type Legacy)(uri ${KIPRJMOD}/Marvin.lib)(options "")(descr ""))
+  (lib (name Arduino_Mega_25xx)(type Legacy)(uri ${KIPRJMOD}/Arduino_MEGA_2560-Rev3.lib)(options "")(descr ""))
+  (lib (name Marvin-rescue)(type Legacy)(uri ${KIPRJMOD}/Marvin-rescue.lib)(options "")(descr ""))
+  (lib (name w_connectors)(type Legacy)(uri C:/Users/sebas/Documents/Marvin-KiCAD/w_connectors.lib)(options "")(descr ""))
 )
