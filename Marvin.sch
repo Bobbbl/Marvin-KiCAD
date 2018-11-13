@@ -252,30 +252,30 @@ $EndComp
 $Comp
 L motors:Motor_DC M1
 U 1 1 5BE07F6E
-P 1450 6250
-F 0 "M1" H 1550 6350 50  0000 L CNN
-F 1 "Motor_DC" H 1550 6050 50  0000 L TNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 1450 6160 50  0001 C CNN
-F 3 "" H 1450 6160 50  0001 C CNN
-	1    1450 6250
+P 1100 4200
+F 0 "M1" H 1200 4300 50  0000 L CNN
+F 1 "Motor_DC" H 1200 4000 50  0000 L TNN
+F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 1100 4110 50  0001 C CNN
+F 3 "" H 1100 4110 50  0001 C CNN
+	1    1100 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:1N4001 D1
 U 1 1 5BE093C6
-P 2200 6250
-F 0 "D1" H 2200 6350 50  0000 C CNN
-F 1 "1N4001" H 2200 6150 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 2200 6075 50  0001 C CNN
-F 3 "" H 2200 6250 50  0001 C CNN
-	1    2200 6250
+P 1850 4200
+F 0 "D1" H 1850 4300 50  0000 C CNN
+F 1 "1N4001" H 1850 4100 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 1850 4025 50  0001 C CNN
+F 3 "" H 1850 4200 50  0001 C CNN
+	1    1850 4200
 	0    1    1    0   
 $EndComp
-Text GLabel 1450 5900 1    60   Input ~ 0
+Text GLabel 1100 3850 1    60   Input ~ 0
 OUT1
-Text GLabel 1450 6750 3    60   Input ~ 0
+Text GLabel 1100 4700 3    60   Input ~ 0
 OUT2
-Text Notes 1650 5700 0    79   ~ 16
+Text Notes 1550 3650 0    79   ~ 16
 Polierspindel\n
 Wire Wire Line
 	650  1100 1000 1100
@@ -359,19 +359,19 @@ Wire Wire Line
 Wire Wire Line
 	8800 3650 8600 3650
 Wire Wire Line
-	1450 6550 1450 6600
+	1100 4500 1100 4550
 Wire Wire Line
-	1450 5900 1450 6000
+	1100 3850 1100 3950
 Wire Wire Line
-	2200 6100 2200 6000
+	1850 4050 1850 3950
 Wire Wire Line
-	2200 6000 1450 6000
-Connection ~ 1450 6000
+	1850 3950 1100 3950
+Connection ~ 1100 3950
 Wire Wire Line
-	1450 6600 2200 6600
+	1100 4550 1850 4550
 Wire Wire Line
-	2200 6600 2200 6400
-Connection ~ 1450 6600
+	1850 4550 1850 4350
+Connection ~ 1100 4550
 Text Notes 2950 700  0    79   ~ 16
 5V Stromversorgung
 Text Notes 2950 1200 0    59   ~ 0
@@ -391,9 +391,9 @@ Wire Wire Line
 Wire Wire Line
 	8700 2800 8800 2800
 Wire Wire Line
-	1450 6000 1450 6050
+	1100 3950 1100 4000
 Wire Wire Line
-	1450 6600 1450 6750
+	1100 4550 1100 4700
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5BE3EC9B
@@ -424,9 +424,6 @@ $EndComp
 Connection ~ 1700 1450
 Wire Wire Line
 	1700 1450 1700 1600
-NoConn ~ 5650 1950
-NoConn ~ 5600 2000
-NoConn ~ 5650 2050
 Wire Wire Line
 	5400 2250 5650 2250
 $Comp
@@ -553,4 +550,104 @@ Text GLabel 6800 4150 2    50   Input ~ 0
 MOSI
 Wire Wire Line
 	6800 4150 6650 4150
+Text Notes 1850 2400 0    79   ~ 16
+SD Card Modul
+Text Notes 1850 2600 0    59   ~ 0
+SD Card Modul von Adafruit\nAdafruit 254\n
+$Comp
+L Device:R R?
+U 1 1 5BF0624E
+P 7350 2500
+F 0 "R?" H 7420 2546 50  0000 L CNN
+F 1 "R" H 7420 2455 50  0000 L CNN
+F 2 "" V 7280 2500 50  0001 C CNN
+F 3 "~" H 7350 2500 50  0001 C CNN
+	1    7350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BF062C0
+P 7600 2550
+F 0 "R?" H 7670 2596 50  0000 L CNN
+F 1 "R" H 7670 2505 50  0000 L CNN
+F 2 "" V 7530 2550 50  0001 C CNN
+F 3 "~" H 7600 2550 50  0001 C CNN
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR?
+U 1 1 5BF063E1
+P 7350 2250
+F 0 "#PWR?" H 7350 2100 50  0001 C CNN
+F 1 "+5VD" H 7350 2390 50  0000 C CNN
+F 2 "" H 7350 2250 50  0001 C CNN
+F 3 "" H 7350 2250 50  0001 C CNN
+	1    7350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR?
+U 1 1 5BF06454
+P 7600 2300
+F 0 "#PWR?" H 7600 2150 50  0001 C CNN
+F 1 "+5VD" H 7600 2440 50  0000 C CNN
+F 2 "" H 7600 2300 50  0001 C CNN
+F 3 "" H 7600 2300 50  0001 C CNN
+	1    7600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2250 7350 2350
+Wire Wire Line
+	7600 2300 7600 2400
+Wire Wire Line
+	6650 2650 7350 2650
+Wire Wire Line
+	6700 2700 7600 2700
+Text GLabel 7350 2900 3    50   Input ~ 0
+LIM1
+Text GLabel 7600 2900 3    50   Input ~ 0
+LIM2
+Wire Wire Line
+	7350 2650 7350 2900
+Connection ~ 7350 2650
+Wire Wire Line
+	7600 2700 7600 2900
+Connection ~ 7600 2700
+$Comp
+L Device:Rotary_Encoder SW?
+U 1 1 5BF4D015
+P 1250 5600
+F 0 "SW?" H 1195 5233 50  0000 C CNN
+F 1 "Rotary_Encoder" H 1195 5324 50  0000 C CNN
+F 2 "" H 1100 5760 50  0001 C CNN
+F 3 "~" H 1250 5860 50  0001 C CNN
+	1    1250 5600
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1550 5600
+Wire Wire Line
+	6650 3200 6750 3200
+Wire Wire Line
+	6750 3200 6750 3250
+Text GLabel 6800 3150 2    50   Input ~ 0
+A
+Text GLabel 6800 3250 2    50   Input ~ 0
+B
+Wire Wire Line
+	6750 3250 6800 3250
+Wire Wire Line
+	6800 3150 6700 3150
+Text GLabel 1700 5700 2    50   Input ~ 0
+A
+Text GLabel 1700 5500 2    50   Input ~ 0
+B
+Wire Wire Line
+	1700 5700 1550 5700
+Wire Wire Line
+	1700 5500 1550 5500
+Text Notes 2050 3950 0    59   ~ 0
+Polierspindel mit Drehzahl-\nmessung. DC Motor und \nRotary Encoder
 $EndSCHEMATC
