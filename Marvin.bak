@@ -275,7 +275,7 @@ Text GLabel 1100 3850 1    60   Input ~ 0
 OUT1
 Text GLabel 1100 4700 3    60   Input ~ 0
 OUT2
-Text Notes 1300 3650 0    79   ~ 16
+Text Notes 1550 3650 0    79   ~ 16
 Polierspindel\n
 Wire Wire Line
 	650  1100 1000 1100
@@ -619,15 +619,15 @@ Connection ~ 7600 2700
 $Comp
 L Device:Rotary_Encoder SW?
 U 1 1 5BF4D015
-P 3500 4900
-F 0 "SW?" H 3445 4533 50  0000 C CNN
-F 1 "Rotary_Encoder" H 3445 4624 50  0000 C CNN
-F 2 "" H 3350 5060 50  0001 C CNN
-F 3 "~" H 3500 5160 50  0001 C CNN
-	1    3500 4900
+P 1250 5600
+F 0 "SW?" H 1195 5233 50  0000 C CNN
+F 1 "Rotary_Encoder" H 1195 5324 50  0000 C CNN
+F 2 "" H 1100 5760 50  0001 C CNN
+F 3 "~" H 1250 5860 50  0001 C CNN
+	1    1250 5600
 	-1   0    0    1   
 $EndComp
-NoConn ~ 3800 4900
+NoConn ~ 1550 5600
 Wire Wire Line
 	6650 3200 6750 3200
 Wire Wire Line
@@ -640,12 +640,14 @@ Wire Wire Line
 	6750 3250 6800 3250
 Wire Wire Line
 	6800 3150 6700 3150
-Text GLabel 3950 5000 2    50   Input ~ 0
+Text GLabel 1700 5700 2    50   Input ~ 0
 A
-Text GLabel 3950 4800 2    50   Input ~ 0
+Text GLabel 1700 5500 2    50   Input ~ 0
 B
 Wire Wire Line
-	3950 5000 3800 5000
+	1700 5700 1550 5700
 Wire Wire Line
-	3950 4800 3800 4800
+	1700 5500 1550 5500
+Text Notes 2050 3950 0    59   ~ 0
+Polierspindel mit Drehzahl-\nmessung. DC Motor und \nRotary Encoder
 $EndSCHEMATC

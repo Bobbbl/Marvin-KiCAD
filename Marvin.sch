@@ -650,4 +650,6 @@ Wire Wire Line
 	1700 5500 1550 5500
 Text Notes 2050 3950 0    59   ~ 0
 Polierspindel mit Drehzahl-\nmessung. DC Motor und \nRotary Encoder
+Text Notes 5450 4450 0    59   ~ 0
+AVR Atmega2560 - 16 MHz
 $EndSCHEMATC
