@@ -137,7 +137,7 @@ F 3 "" H 5400 2250 50  0001 C CNN
 $EndComp
 Text GLabel 6800 2550 2    60   Input ~ 0
 PWM1
-Text GLabel 6800 2450 2    60   Input ~ 0
+Text GLabel 6800 2300 2    60   Input ~ 0
 PWM2
 Text GLabel 8700 1100 0    60   Input ~ 0
 PWM1
@@ -429,30 +429,20 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR?
 U 1 1 5BEE61DB
-P 6850 2150
-F 0 "#PWR?" H 6850 1900 50  0001 C CNN
-F 1 "GNDD" H 6854 1995 50  0000 C CNN
-F 2 "" H 6850 2150 50  0001 C CNN
-F 3 "" H 6850 2150 50  0001 C CNN
-	1    6850 2150
+P 6950 2000
+F 0 "#PWR?" H 6950 1750 50  0001 C CNN
+F 1 "GNDD" H 6954 1845 50  0000 C CNN
+F 2 "" H 6950 2000 50  0001 C CNN
+F 3 "" H 6950 2000 50  0001 C CNN
+	1    6950 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 2150 6850 2100
-Wire Wire Line
-	6850 2100 6650 2100
 Wire Wire Line
 	5600 2100 5550 2100
 Wire Wire Line
 	5550 2100 5550 1300
 Wire Wire Line
 	5550 1300 8000 1300
-Wire Wire Line
-	6800 2450 6750 2450
-Wire Wire Line
-	6750 2450 6750 2500
-Wire Wire Line
-	6750 2500 6700 2500
 Wire Wire Line
 	6800 2550 6650 2550
 Wire Wire Line
@@ -650,4 +640,14 @@ Wire Wire Line
 	1700 5500 1550 5500
 Text Notes 2050 3950 0    59   ~ 0
 Polierspindel mit Drehzahl-\nmessung. DC Motor und \nRotary Encoder
+Text Notes 5450 4450 0    59   ~ 0
+AVR Atmega2560 - 16 MHz
+Wire Wire Line
+	6650 2100 6800 2100
+Wire Wire Line
+	6800 2000 6950 2000
+Wire Wire Line
+	6800 2100 6800 2000
+Wire Wire Line
+	6650 2300 6800 2300
 $EndSCHEMATC

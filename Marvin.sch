@@ -438,23 +438,11 @@ F 3 "" H 6850 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 2150 6850 2100
-Wire Wire Line
-	6850 2100 6650 2100
-Wire Wire Line
 	5600 2100 5550 2100
 Wire Wire Line
 	5550 2100 5550 1300
 Wire Wire Line
 	5550 1300 8000 1300
-Wire Wire Line
-	6800 2450 6750 2450
-Wire Wire Line
-	6750 2450 6750 2500
-Wire Wire Line
-	6750 2500 6700 2500
-Wire Wire Line
-	6800 2550 6650 2550
 Wire Wire Line
 	5500 3350 5550 3350
 Wire Wire Line
@@ -652,4 +640,18 @@ Text Notes 2050 3950 0    59   ~ 0
 Polierspindel mit Drehzahl-\nmessung. DC Motor und \nRotary Encoder
 Text Notes 5450 4450 0    59   ~ 0
 AVR Atmega2560 - 16 MHz
+Wire Wire Line
+	6850 2100 6650 2100
+Wire Wire Line
+	6850 2150 6850 2100
+Wire Wire Line
+	6750 2450 6800 2450
+Wire Wire Line
+	6800 2600 6800 2550
+Wire Wire Line
+	6700 2600 6800 2600
+Wire Wire Line
+	6650 2550 6750 2550
+Wire Wire Line
+	6750 2550 6750 2450
 $EndSCHEMATC
