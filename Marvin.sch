@@ -689,12 +689,6 @@ Wire Wire Line
 	6850 2100 6650 2100
 Wire Wire Line
 	6850 1900 6850 2100
-Wire Wire Line
-	7000 2000 6900 2000
-Wire Wire Line
-	6900 2000 6900 2250
-Wire Wire Line
-	6900 2250 6700 2250
 Text GLabel 4050 4450 3    50   Input ~ 0
 PWM_PressurePump
 Text GLabel 3900 4450 3    50   Input ~ 0
@@ -900,4 +894,22 @@ Text Notes 5250 1000 0    59   ~ 0
 mit Atmega2560\n16 MHz\n12 V Vcc max
 Text Notes 3250 5050 3    118  ~ 24
 DC Motoren und Encoder\n
+Text GLabel 6750 2200 2    50   Input ~ 0
+PWM3
+Wire Wire Line
+	6650 2200 6750 2200
+Wire Wire Line
+	7000 2000 6900 2000
+Wire Wire Line
+	6750 2250 6750 2300
+Wire Wire Line
+	7100 2300 7100 2100
+Wire Wire Line
+	7100 2100 6900 2100
+Wire Wire Line
+	6900 2100 6900 2000
+Wire Wire Line
+	6750 2250 6700 2250
+Wire Wire Line
+	6750 2300 7100 2300
 $EndSCHEMATC

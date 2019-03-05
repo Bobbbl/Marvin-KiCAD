@@ -898,4 +898,6 @@ Text Notes 5250 700  0    79   ~ 16
 Arduino Mega Board
 Text Notes 5250 1000 0    59   ~ 0
 mit Atmega2560\n16 MHz\n12 V Vcc max
+Text Notes 3250 5050 3    118  ~ 24
+DC Motoren und Encoder\n
 $EndSCHEMATC
