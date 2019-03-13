@@ -665,10 +665,6 @@ Wire Wire Line
 	3600 4300 3800 4300
 Wire Wire Line
 	3800 4300 3800 4250
-Text GLabel 4550 3800 2    60   Input ~ 0
-DIR2
-Text GLabel 4550 3700 2    60   Input ~ 0
-DIR1
 Text GLabel 4550 3900 2    60   Input ~ 0
 DIR3
 Text GLabel 4550 4000 2    60   Input ~ 0
@@ -982,4 +978,16 @@ Text Notes 3050 750  0    79   ~ 16
 Relay Module
 Text Notes 3050 900  0    59   ~ 0
 Nur das Modul 4 ist in Benutzung
+Text GLabel 6800 3900 2    50   Input ~ 0
+IN1
+Text GLabel 5500 3850 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	5500 3850 5650 3850
+Wire Wire Line
+	6800 3900 6700 3900
+Text GLabel 4550 3700 2    50   Input ~ 0
+IN1
+Text GLabel 4550 3800 2    50   Input ~ 0
+IN2
 $EndSCHEMATC
